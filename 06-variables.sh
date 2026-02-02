@@ -9,3 +9,4 @@ echo "home directory of current user: $HOME"
 echo "PID of the script is:$$"
 sleep 100 &
 echo "PID of last background process:$!"
+echo "all arguments passed to script : $*"
