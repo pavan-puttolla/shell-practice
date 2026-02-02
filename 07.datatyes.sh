@@ -6,9 +6,10 @@ sum=$((Num1 + Num2))
 echo "sum of numbers is :$sum "
 
 ####Array Data Type###
-frurits=("Pineapple" "Apple" "pomogrinate" "kivi")
-echo" fruits are:${fruits[@]}"
-echo"first fruit:${fruits[0]}"
-echo"second fruit:${fruits[1]}"
-echo"third fruit:${fruits[2]}"
-echo"fourth fruit:${fruits[3]}"
+
+FRUITS=("Pineapple" "Apple" "pomogrinate" "kivi")
+echo "fruits are:${FRUITS[@]}"
+echo "first fruit:${FRUITS[0]}"
+echo "second fruit:${FRUITS[1]}"
+echo "third fruit:${FRUITS[2]}"
+echo "fourth fruit:${FRUITS[3]}"
