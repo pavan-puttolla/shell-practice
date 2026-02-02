@@ -7,7 +7,7 @@ NUMBER=25
 #-lt=> less than
 if [ $NUMBER -gt 20 ]; then
 echo "given number is :$NUMBER greater than 20"
-elif[$number -eq 20 ]; then
+elif[$NUMBER -eq 20 ]; then
 echo"given number is :$NUMBER equal to 20"
 else[$NUMBER -lt 20 ];then
 echo "given number is:$NUMBER less than 20"
