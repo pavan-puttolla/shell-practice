@@ -1,6 +1,6 @@
 #!/bin/bash
 #########Special variables in bash########
-echo "All vaiables are passed to script:$0"
+echo "All arguments are passed to script:$@"
 echo "number of varibles are passed to script:$#"
 echo "script name is:$0"
 echo " present running directoruy:$pwd"
