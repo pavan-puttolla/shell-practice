@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 ######## Installation script#########
 USERID=$(id -u)
