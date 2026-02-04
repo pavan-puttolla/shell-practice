@@ -13,7 +13,7 @@ else
 echo "$2 installation is successful"
 fi
 }
-dnf install Nginx -y
+dnf install nginx -y
 VALIDATE $? "installing Nginx"
 
 dnf install nodejs -y
