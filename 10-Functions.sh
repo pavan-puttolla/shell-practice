@@ -12,6 +12,7 @@ exit 1
 else
 echo "$2 installation is successful"
 fi
+
 }
 
 dnf install Nginx -y
