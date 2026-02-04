@@ -16,7 +16,7 @@ echo "nginx installation is successful"
 fi
 
 dnf install mysql -y
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
 echo "my Sql-server installation is failure"
 exit 1
 else
