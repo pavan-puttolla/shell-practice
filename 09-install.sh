@@ -8,7 +8,7 @@ exit 1
 fi
 echo "Installing nginx "
 dnf install nginx -y
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
 echo "nginx installation is failure"
 exit 1
 else
@@ -24,7 +24,7 @@ echo "mysql server installlation is sucessful"
 fi
 
 dnf install nodejs -y
-if [ $? -ne 0];  then
+if [ $? -ne 0 ]; then
 echo " node js installation is failure"
 exit 1
 else 
