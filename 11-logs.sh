@@ -17,6 +17,7 @@ else
 echo "$2 installation is successful"
 fi
 }
+
 dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "installing Nginx"
 
