@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 LOGSFOLDER="/var/log/shell-scriptlogs"
-LOGS_FILE="$LOGSFOLDER/$0.log"
+LOGS_FILE="$LOGSFOLDER/$0.$(date +%F-%T).log"
 if [ $USERID -ne 0 ]; then
 echo "please run with the root user "
 exit 1 
