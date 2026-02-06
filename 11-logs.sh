@@ -1,8 +1,8 @@
 #! /bin/bash
 
 USERID=$(id -u)
-LOGSFOLDER=/var/log/shell-scriptlogs
-LOGS_FILE=var/log/shell-scriptlogs/$0.log
+LOGSFOLDER="/var/log/shell-scriptlogs"
+LOGS_FILE="$LOGSFOLDER/$0.log"
 if [ $USERID -ne 0 ]; then
 echo "please run with the root user "
 exit 1 
