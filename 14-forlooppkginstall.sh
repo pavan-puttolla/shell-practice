@@ -17,7 +17,7 @@ VALIDATE(){
     fi
 }
 
-for package in $@ #sudo 14-forlooppkg install.sh nginx mysql nodejs
+for package in $@ #sudo 14-forlooppkginstall.sh nginx mysql nodejs
 do
 dnf install $package -y &>> $LOGS_FILE
 VALIDATE $? "Installing $package"
