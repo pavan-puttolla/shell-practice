@@ -17,10 +17,9 @@ VALIDATE(){
 }
 
 dnf install nginx -y &>> $LOGS_FILE
-VALIDATE $? "installing Nginx"
-
+VALIDATE $? "Nginx
 dnf install mysql -y &>> $LOGS_FILE
-VALIDATE $? "installing MYSQL"
+VALIDATE $? " MYSQL"
 
 dnf install nodejs -y &>> $LOGS_FILE
-VALIDATE $? "installing nodejs"
+VALIDATE $? "nodejs"
