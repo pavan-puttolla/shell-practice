@@ -1,8 +1,8 @@
 #! /bin/bash
 
 USERID=$(id -u)
-LOGS_FOLDER="/var/log/shellsript_logs"
-LOGS_FILE=/var/log/shellsript_logs/$0.log
+LOGS_FOLDER="/var/log/shellsriptforlooppkg_logs"
+LOGS_FILE=/var/log/shellsriptforlooppkg_logs/$0.log
 if [ $USERID -ne 0 ]; then
 echo "please run with root access" |tee -a $LOGS_FILE 
 exit 1
