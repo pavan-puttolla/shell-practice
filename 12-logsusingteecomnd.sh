@@ -10,7 +10,7 @@ fi
 mkdir  -p $LOGS_FOLDER
 VALIDATE(){
     if [$1 -ne 0]; then 
-    echo "$2 -----installation is failure " |tee -a $LOGS_FILE
+    echo "$2 -----installation is failure" |tee -a $LOGS_FILE
     exit 1
     else  "$2 ....installation is sucess" |tee -a $LOGS_FILE
     fi
