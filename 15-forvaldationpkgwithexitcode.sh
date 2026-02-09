@@ -19,6 +19,11 @@ VALIDATE(){
 
 for package in $@ # sudo 14-forlooppkginstall.sh nginx mysql nodejs
 do
-dnf install $package -y &>> $LOGS_FILE
+dnf list installed $package -y &>> $LOGS_FILE
+echo "checking $package is already installed or not" | tee -a $LOGS_FILE
+if [ $? -ne 0 ]; then
 VALIDATE $? "Installing $package"
-done
+else
+echo "$package is already installed" | tee -a $LOGS_FILE
+fi      
+done    
