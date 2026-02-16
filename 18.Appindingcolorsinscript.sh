@@ -18,7 +18,7 @@ VALIDATE(){
     echo -e "$2 -----installation is $R failure $N" | tee -a $LOGS_FILE
     exit 1
     else 
-    echo -e "$2 ....installation is $G success $y" | tee -a $LOGS_FILE
+    echo -e "$2 ....installation is $G success $N" | tee -a $LOGS_FILE
     fi
 }
 
@@ -30,6 +30,6 @@ do
     dnf install $package -y &>> $LOGS_FILE
     VALIDATE $? " $package installation"
 else
-echo "$package is already installed,skipping " | tee -a $LOGS_FILE
+echo -e "$Y $package is already installed,skipping $N" | tee -a $LOGS_FILE
 fi      
 done    
