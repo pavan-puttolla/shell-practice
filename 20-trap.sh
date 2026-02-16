@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e #ERR
 
-trap "echo 'this is trap block, this will execute when any command in script is failed'" ERR
+trap "echo 'this is error in line $LINENO,command $BASH_COMMAND'" ERR
 
 echo "hello world"
 echo "this is shell script for trap command"
